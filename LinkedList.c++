@@ -12,7 +12,7 @@ int ListLength(struct ListNode *head) {
 
     struct ListNode *current = head;
     int count = 0;
-    while (head != NULL) {
+    while (current != NULL) {
         count++;
         current = current -> next;
     }
@@ -109,8 +109,9 @@ void DeleteLinkedList(struct ListNode **head) {
 int main() {
 
 
-
-
+    struct ListNode *list1 = NULL;
+    InsertInLinkedList(&list1, 1, 1);
+    cout<<ListLength(list1);
 
 
 
