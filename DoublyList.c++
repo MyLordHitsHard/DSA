@@ -60,7 +60,7 @@ void DLLDelete(struct DLLNode **head, int position) {
         return;
     }
 
-    if (position == 1) {
+    if (position == 1) {                                           // Deleting from start
         *head = (*head) -> next;
         
         if (*head != NULL) {
@@ -71,7 +71,7 @@ void DLLDelete(struct DLLNode **head, int position) {
         
     }
 
-    while ( (k < position - 1) && temp -> next != NULL) {
+    while ( (k < position - 1) && temp -> next != NULL) {          // Deleting from any pos or end
         temp = temp -> next;
         k++;
     }
