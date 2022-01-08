@@ -44,7 +44,7 @@ void searchElement(int k, struct LinkedBlock *fLinkedBlock, struct ListNode **fL
         p = p -> next;
     }
 
-    *fLinkedBlock = p;
+    
     
 }
 
